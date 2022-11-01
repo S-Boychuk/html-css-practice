@@ -55,6 +55,7 @@ a:focus {
 .container,
 .container-large {
 	margin: 0 auto;
+	outline: 3px solid red ;
 }
 
 .container {
@@ -336,7 +337,7 @@ a:focus {
 }
 
 .footer-container {
-	padding: 90px 120px;	
+	padding: 90px 0;	
 }
 
 .footer-logo-position {
@@ -418,6 +419,13 @@ a:focus {
 	color: var(--primary-light-color);
 }
 
+.information-link,
+.soc-list-link,
+.template-link {
+	display: block;
+	margin-bottom: 10px;
+}
+
 .information-wrapper,
 .soc-list-wrapper,
 .template-wrapper {	
@@ -427,10 +435,11 @@ a:focus {
 
 .footer-form {
 	display: flex;
+	align-items: baseline;
 }
 
 .footer-form-input {
-	min-width: 251px;
+	min-width: 221px;
 	min-height: 48px;
 	padding-left: 24px;
 	border: 1px solid var(--input-border-color);
@@ -475,7 +484,8 @@ a:focus {
 	transition: color 500ms linear;
 }
 
-.footer-form-submit-btn:hover {
+.footer-form-submit-btn:hover,
+.footer-form-submit-btn:focus {
 	color: crimson;
 }
 
